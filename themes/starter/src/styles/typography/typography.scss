@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--font-main);
+  font-weight: 700;
+  color: #192844;
+}
+
+p{
+  font-family:var(--font-second);
+  color: var(--grey-body-text);
+  line-height: 140%;
+  font-weight: 400;
+}
+

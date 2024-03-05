@@ -1,0 +1,35 @@
+#scroller {
+    display: none;
+    background: var(--pink);
+    svg{
+        width: 24px;
+        height: 24px;
+        path{
+           fill: var(--White);
+        }
+    }
+    &.active {
+        display: inline;
+        position: fixed;
+        right: 30px;
+        bottom: 10%;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: $transition-prime;
+        z-index: 130;
+        border: 2px solid var(--pink);
+
+        &:hover {
+            background-color: transparent;
+            transform: scale(1.1);
+            svg{
+                path{
+                    fill: var(--pink);
+                }
+            }
+        }
+    }
+}

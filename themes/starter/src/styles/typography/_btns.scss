@@ -1,0 +1,67 @@
+.btn-common{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: $transition-prime;
+    @include adaptiv-font(18,15);
+    font-weight: 600;
+    padding: 17px 43px;
+    border: 2px solid var(--pink);
+    cursor: pointer;
+    color: var(--White);
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--pink);
+    span{
+    }
+    &:hover{
+       background: transparent;
+       color: var(--pink);
+    }
+    &:active{
+        background: transparent;
+        color: var(--pink);
+    }
+    @media (max-width: 992px) {
+        padding: 10px 14px;
+    }
+}
+
+.btn-log{
+    padding: 17px 42px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+    flex-shrink: 0;
+    span{
+        @include adaptiv-font(18,15);
+        font-family: var(--font-second);
+        color: var(--Black);
+    }
+    &:hover{
+        border: 1px solid rgba(255, 255, 255, 0); 
+        background: var(--pink);
+        span{
+            color: var(--White);
+
+        }
+    }
+}
+
+.btn-sign{
+    flex-shrink: 0;
+    span{
+        @include adaptiv-font(18,15);
+        font-family: var(--font-second);
+        color: var(--Black);
+        font-weight: 600;
+        transition: .3s ease-in-out;
+    }
+    &:hover{
+        span{
+            color: var(--pink);
+        }
+    }
+}
