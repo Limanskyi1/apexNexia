@@ -1,0 +1,42 @@
+.tapes{
+    position: relative;
+    height: 22.222vh;
+    margin-top: -4%;
+    z-index: 2;
+    @media (max-width: 1199.98px) {
+        height: 150px;
+    }
+    @media (max-width: 991.98px){
+        height: 100px;
+    }
+    @media (max-width: 479.98px){
+        height:75px;
+    }
+    background: linear-gradient(transparent, transparent 50%, var(--White) 50%, var(--White));
+    img{
+        position: absolute;
+        object-fit: cover;
+        aspect-ratio: 1922/240;
+        width: 100%;
+        &:first-of-type{
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        &:last-of-type{
+            top: 0px;
+            left: 0;
+            opacity: 0;
+        }
+    }
+    img:first-of-type{
+        animation: 1.25s revealLeft ease-in-out forwards;
+        width: 100%;
+        animation-delay: 1.6s;
+    }
+    img:last-of-type{
+        animation: 1.25s revealLeft ease-in-out forwards;
+        animation-delay: 2.4s;
+        width: 100%;
+    }
+}

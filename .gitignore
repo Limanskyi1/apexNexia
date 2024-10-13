@@ -1,0 +1,9 @@
+/languages/
+/themes/twenty*/
+/plugins/hello.php
+*.log
+/uploads/
+/upgrade/
+README.md
+/plugins/
+/themes/starter/node_modules/
